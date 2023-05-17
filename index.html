@@ -21,8 +21,17 @@
 
     <script type="text/babel">
 
+      function Button() {
+        const [total, setTotal] = React.useState(0);
+        return <button onClick ={() => setTotal(total + 1)} >Add {total}</button>
+
+      }
       function App() {
-        return <div>Juliana React</div>;
+        return <div>
+          <h1>React Application</h1>
+          <Button />
+          <Button />
+          </div>;
       }
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
