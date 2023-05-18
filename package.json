@@ -4,13 +4,15 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "esbuild --bundle src/main.js --outfile=main.js --servedir=./ --watch",
-    "build": "esbuild --bundle src/main.js --outfile=main.js"
+    "start": "esbuild --bundle src/main.jsx --outfile=main.js --servedir=./ --watch",
+    "build": "esbuild --bundle src/main.jsx --outfile=main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.17.19"
+    "esbuild": "^0.17.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
