@@ -4,70 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>React test</title>
-
-  <!-- Carrega o React, React Dom e Babel -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-  <!-- Don't use this in production: -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>React</title>
 </head>
 <body>
-  <script src="./script.js"></script>
-
-  <div id="root"></div>
-
-    <script type="text/babel">
-      const Products = () => {
-        const product1 = "Shirt";
-        const product2 = "Short";
-        return <div>
-          <button onClick={handleClick}>{product1} - $ {Math.random() * 100}</button>
-          <button onClick={handleClick}>{product2} - $ {Math.random() * 100}</button>
-        </div>
-      };
-      function handleClick(event) {
-        console.log('User bought ' + event.target.innerText);
-      };
-      const Comprar = () => {
-        const [count, setCount] = React.useState(5);
-
-        function handleClick() {
-          setCount(count + 1)
-        };
-        return <div>
-          <button onClick={handleClick}>Buy: {count}</button>
-          <p>Total: {count}</p>
-          <p>Price: {count * 250}</p>
-        </div>
-      };
-      const Button = () => {
-        const [total, setTotal] = React.useState(0);
-        return
-          <button onClick ={() => setTotal(total + 1)} >Add {total}</button>
-      };
-      const MainNav = () => {
-        return (
-        <nav>
-          <a href="#">Link1</a>
-          <a href="#">Link2</a>
-        </nav>
-        );
-      };
-      const App = () => {
-        return <div>
-          <h1>React Application</h1>
-          <MainNav />
-          <Products />
-          <Button />
-          <Comprar />
-          </div>;
-      }
-      const container = document.getElementById('root');
-      const root = ReactDOM.createRoot(container);
-      root.render(<App />);
-    </script>
+  <div id="root">
+    <h1>teste</h1>
+    <script src="./main.js"></script>
+  </div>
 </body>
 </html>
